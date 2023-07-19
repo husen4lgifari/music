@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Music Player</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto&amp;display=swap'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+    <div class="player">
+        <div class="cover">
+            <img src="tes.jpg" alt="">
+        </div>
+        <div class="info">Tandoq
+            <div class="title"></div>
+            <div class="singer">Eva X Sulis</div>
+        </div>
+        <div class="music-box">
+            <input type="range" step="1" class="seekbar" value="0" min="0" max="100" oninput="handleSeekBar()">
+
+            <audio class="music-element">
+                <source src="marvin.mp3" type="audio/mp3">
+            </audio>
+            <span class="current-time">0:0</span><span class="duration">0:0</span>
+            <span class="play" onclick="handlePlay()">
+                <i class="material-icons">play_arrow</i>
+            </span>
+        </div>
+    </div>
+
+  <script  src="./script.js"></script>
+
+</body>
+</html>
